@@ -1,0 +1,20 @@
+#todo{
+    top:30%;
+    left: 20%;
+    font-size: 40px;
+}
+.pending{
+    padding: 20px;
+    margin: 15px;
+    background-color: #FCED36;
+}
+
+.pending:hover{
+    background-color: #13548B;
+    font-size: 50px;
+    margin: 5px;
+}
+
+.completed{
+    text-decoration:line-through;
+}

@@ -1,0 +1,16 @@
+div{
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 30%;
+    top:40%;
+}
+
+button{
+    width: 40%;
+    height: 80px;
+    background-color: rgb(102, 102, 102);
+    outline: none;
+    font-size: 30px;
+    color:white;
+}
