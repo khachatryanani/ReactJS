@@ -1,6 +1,5 @@
-const inputText = (text, e) => {
-    var presentorDiv = document.getElementById("presentor");
-    debugger;
+var presentorDiv = document.getElementById("presentor");
+const inputText = (e) => {
     if(e.key == "Backspace")
     {
         if(presentorDiv.lastChild.textContent.length >= 1 && presentorDiv.lastChild != presentorDiv.lastElementChild)
@@ -41,7 +40,7 @@ const inputText = (text, e) => {
     }
     else
     {
-        presentorDiv.innerHTML+= text;
+        presentorDiv.innerHTML+= e.key;
     }
 }
 
@@ -125,7 +124,7 @@ const disableArrows = (e)=>
 
 var input = document.getElementById("inputfield");
 input.addEventListener('keydown', (e)=>disableArrows(e));
-input.addEventListener("keyup", (e)=> inputText(input.value[input.value.length -1], e));
+input.addEventListener("keyup", (e)=> inputText(e));
 
 var actionBtn = document.getElementsByClassName("chareditor");
 for(let i = 0; i < actionBtn.length; i++)
