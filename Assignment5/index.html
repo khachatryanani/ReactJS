@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Animated Cradit Card</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-side front">
+                <div> 
+                    <div class="logo"><img src="https://raw.githubusercontent.com/dasShounak/freeUseImages/main/Visa-Logo-PNG-Image.png" alt="Visa"></div>
+                    <div class="chip"><img src="https://raw.githubusercontent.com/dasShounak/freeUseImages/main/chip.png" alt="chip"></div>
+                    <div class="number">#### #### #### ####</div>
+                    <div class="name" >JHON DOE</div>
+                    <div class="to">06/21</div>
+                </div>
+            </div>
+            <div class="card-side back">
+                <div>
+                    <div class="line">
+                        <div class="cvv"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login-box">
+            <form id="cardInfo">
+              <div class="user-box">
+                <input type="number" name="cardnumber" required id="cardNumberInput" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "16">
+                <label>Card Number</label>
+              </div>
+              <div class="user-box">
+                <input type="text" name="cardname" required id="cardNameInput" maxlength="20" >
+                <label>Card Name</label>
+              </div>
+              <div class="container">
+                  <div class="user-box"> 
+                    <label class="activated">Valid Until</label>
+                    <select name="date"  id="date">
+                      <option value="" disabled selected hidden>Month</option>
+                      <option value="01">Jan</option>
+                      <option value="02">Feb</option>
+                      <option value="03">Mar</option>
+                      <option value="04">Apr</option>
+                      <option value="05">May</option>
+                      <option value="06">Jun</option>
+                      <option value="07">Jul</option>
+                      <option value="08">Aug</option>
+                      <option value="09">Sep</option>
+                      <option value="10">Oct</option>
+                      <option value="11">Nov</option>
+                      <option value="12">Dec</option>
+                   </select>
+                  </div>
+                <div class="user-box"> 
+                    <select name="year" id="year">
+                        <option value="" disabled selected hidden>Year</option>
+                        <option value="22">2022</option>
+                        <option value="23">2023</option>
+                        <option value="24">2024</option>
+                        <option value="25">2025</option>
+                        <option value="26">2026</option>
+                        <option value="27">2027</option>
+                    </select>
+                </div>
+                <div class="user-box"> 
+                  <label class="activated">CVV</label>
+                  <input id="cvvinput" type="number" name="cvv" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  maxlength = "3">
+                </div>
+            </div>
+              <button id="submitbtn">Submit</button>
+            </form>
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

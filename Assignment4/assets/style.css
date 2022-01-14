@@ -1,0 +1,201 @@
+body {
+    align-items: left;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    justify-content: left;
+  }
+  
+  form {
+    background-color: #15172b;
+    border-radius: px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 320px;
+    height: 100%;
+  }
+
+  .account
+  {
+    background-color: #15172b;
+    border-radius: px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 320px;
+    height: 100%;
+    color: wheat;
+    font-family: sans-serif;
+    font-size: 16px;
+    display:none;
+  }
+  
+  .title {
+    color: wheat;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 15px;
+    text-align: center;
+  }
+    
+  .input-container {
+    height: 35px;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .input {
+    background-color: #303245;
+    border-radius: 5px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 16px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .submit {
+    background-color: #06d;
+    border-radius: 50px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 10px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+  
+  input[type="file"] {
+    position: relative;
+    
+    top: 10px;
+    left: 8px;
+    font-size: 17px;
+    color: #b8b8b8;
+  }
+
+  .button-wrap {
+    position: relative;
+  }
+
+  .button {
+    position: absolute;
+    display: inline-block;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #06b;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 1;
+    font-family: sans-serif;
+  }
+
+  .container {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: sans-serif;
+  }
+
+  .label
+  {
+      background: transparent;
+      outline: none;
+      border: none;
+      width: 25%;
+      font-size: 16px;
+      font-family: sans-serif;
+  }
+
+  input[type="radio"] 
+  {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+
+  .box
+  {
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+
+  .datepicker-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .text-input
+  {
+    position: absolute;
+    left: 20px;
+    width: 100px;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+
+  .datepicker-input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .datepicker-toggle {
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 19px;
+  }
+  .datepicker-toggle-button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;base64,...');
+  }
+
+  .info
+  {
+      color: white;
+      font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+  }

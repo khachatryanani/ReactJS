@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Animated Cradit Card</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <form class="form" name="accountinfo" id="accountInfo">
+            <div class="title">CREATE ACCOUNT</div>
+            <div class="input-container">
+              <input id="firstname" class="input" type="text" placeholder="First Name" name="firstname" />
+            </div>
+            <div class="input-container">
+              <input id="lastname" class="input" type="text" placeholder="Last Name" name="lastname" />
+            </div>
+            <div class="input-container">
+              <input id="email" class="input" type="email" placeholder="Email" name="email" />
+            </div>
+            <div class="input-container">
+                <input id="phone" class="input" type="tel" placeholder="Phone" name="phone" />
+            </div>
+            <div class="input-container">
+                <div class="input">
+                    <input class="label" type="text" placeholder="Gender" disabled  />
+                    <div class="box">
+                        <label class="container">Male
+                            <input type="radio" checked="checked" name="gender" value="M">
+                        </label>
+                        <label class="container">Female
+                            <input type="radio" name="gender" value="F">
+                        </label>
+                    </div>  
+                </div>
+            </div>
+            <div class="input-container">
+                <div class="input">
+                    <input class="label" type="text" placeholder="DOB" disabled />
+                    <div class="box">
+                        <span class="datepicker-toggle">
+                            <i class="fa fa-calendar"></i>
+                            <input type="date" class="datepicker-input" name="date">
+                            <input type="text" class="text-input" disabled>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-container">
+                <label class="button" for="upload">Upload File</label>
+                <input id="upload" type="file" name="img">
+            </div>
+            <div class="input-container">
+                <input class="input" type="text" name="street" placeholder="Address Line"/>
+            </div>
+            <div class="input-container">
+                <input class="input" type="text" name="city"  placeholder="City"/>
+            </div>
+            <div class="input-container">
+                <input class="input" type="text" name="province"  placeholder="Province"/>
+            </div>
+            <div class="input-container">
+                <input class="input" type="text" name="country"  placeholder="Country"/>
+            </div>
+            <input type="submit" class="submit" id="submit" />
+        </form>
+
+        <div class="account" id="accountDisplay">
+            <div class="title">YOUR ACCOUNT</div>
+            <div class="input-container">
+              <span>First Name: </span>
+              <span id="firstnamespan" class="info">name info</span>
+            </div>
+            <div class="input-container">
+                <span>Last Name: </span>
+                <span id="lastnamespan"  class="info"></span>
+            </div>
+            <div class="input-container">
+                <span>Email: </span>
+                <span id="emailspan"  class="info"></span>
+            </div>
+            <div class="input-container">
+                <span>Phone: </span>
+                <span id="phonespan"  class="info"></span>
+            </div>
+            <div class="input-container">
+                <span>Gender: </span>
+                <span id="genderspan"  class="info"></span>
+            </div>
+            <div class="input-container">
+                <span>DOB: </span>
+                <span id="dobspan"  class="info"></span>
+            </div>
+            <div class="input-container">
+                <span>Image Source: </span>
+                <span id="imgspan"  class="info"></span>
+            </div>
+            <div class="input-container">
+                <span>Street: </span>
+                <span id="streetspan"  class="info"></span>
+            </div>
+            <div class="input-container">
+                <span>City: </span>
+                <span id="cityspan"  class="info"></span>
+            </div>
+            <div class="input-container">
+                <span>Province: </span>
+                <span id="provincespan"  class="info"></span>
+            </div>
+            <div class="input-container">
+                <span>Country: </span>
+                <span id="countryspan"  class="info"></span>
+            </div>
+            <input type="submit" class="submit" id="reload" value="Reload" />
+        </account>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
