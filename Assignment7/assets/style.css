@@ -1,0 +1,91 @@
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #9e85e2, #4c066d);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+table {
+	width: 700px;
+	border-collapse: collapse;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+thead 
+	th {
+		background-color: #50145a;
+	}
+
+
+#candidates
+{
+  width: 200px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: #50145a;
+  margin: 5px;
+}
+
+.btn
+{
+  width: 150px;
+  padding: 10px;
+  background-color: #50145a;
+  color: #fff;
+  margin-top: 5%;
+  border: 1px solid white;
+}
+
+.inputbox{
+  background: white;
+  outline: none;
+  border: none; 
+  padding: 10px;
+  width: 200px;
+  margin: 5px;
+}
+
+#ageinput
+{
+  width: 100px;
+}
+
+.tableFixHead {
+  overflow-y: auto;
+  height: 400px;
+}
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+}
+
+#vote{
+  margin: 5px;
+}
+
+.selectioncontainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  margin: 10px;
+}

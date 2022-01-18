@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Vote For the Next President</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <form action="" id="newcandidate">
+                <input type="text" name="name" placeholder="Candidate Name" class="inputbox">
+                <input type="number" name="age" placeholder="Age" max="100" min="18" class="inputbox" id="ageinput">
+                <input type="text" name="state" placeholder="State" class="inputbox">
+                <input type="submit" value="Add Candidate" class="btn">
+            </form>
+            <div class="selectioncontainer">
+            <select name="candidates" id="candidates">
+                <option value="" disabled selected hidden>Choose your candidate</option>
+            </select>
+            <input type="button" value="Vote" id="vote"class="btn">
+        </div>
+            <div class="tableFixHead">
+                <table id="candidatesData">
+                    <thead>
+                        <tr>
+                            <th>Candidate</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                            <th>Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
