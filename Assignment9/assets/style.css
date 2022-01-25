@@ -1,0 +1,31 @@
+body{
+  background-color: cornflowerblue;
+}
+
+.container{
+  position: relative;
+  left:30%;
+  top:10%;
+  bottom: 10%;
+  width: 300px;
+  height: auto;
+  background-color: crimson;
+  transform: translate(-50%, 0);
+}
+
+#keyarray{
+  position: relative;
+  top:10%;
+  bottom: 10%;
+  width: 300px;
+  height: auto;
+  background-color: rgb(252, 252, 252);
+}
+
+#sort{
+  margin: 10px;
+  width: 280px;
+  height: 30px;
+  background-color: rgb(14, 10, 49);
+  color: white;
+}
