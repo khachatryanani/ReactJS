@@ -27,7 +27,7 @@ const Notify = (event)=>{
     if(event.type == "keyup"){
         Collect(event.keyCode);
     }
-    
+
     Update(event.type);
     event.preventDefault();
 }
