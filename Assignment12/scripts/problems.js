@@ -463,7 +463,7 @@ class Clock{
         if (secs < 10){
             secs = '0' + secs;
         }      
-        debugger;
+        
         let output = this._template.replace('h', hours).replace('m', mins).replace('s', secs);
         
        console.log(output);
