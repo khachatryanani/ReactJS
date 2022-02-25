@@ -1,0 +1,41 @@
+.dogimage{
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  height: 500px;
+  max-height: 500px;
+  position: relative;
+}
+
+.image{
+  position:fixed;
+  top:10px;
+  left:10px;
+  width:100px;
+}
+
+#searchbar {
+  width: 400px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+#search_button {
+  border: 1px solid #dcdcdc;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #444!important;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 8px;
+  background: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  border-radius: 2px;
+  width: 100px;
+  height: 35px;
+}
+
+.container{
+  position: relative;
+  top: 50px;
+  left: 2%;
+}
+
